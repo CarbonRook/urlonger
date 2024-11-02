@@ -1,6 +1,6 @@
 # carbonrook/urlonger
 
-Package `carbonrook/urlonger` implements an HTTP redirect chain resolver for finding the final destination of a shortened URL.
+Package `carbonrook/urlonger` implements an HTTP redirect chain resolver for identifying the final destination of a shortened URL.
 
 Current implementation has some limitations/design decisions:
 * Redirects are resolved using the `HEAD` HTTP request

@@ -54,12 +54,12 @@ func Resolve(url string, headersFilter []string) ([]Redirect, error) {
 
 		req, err := http.NewRequest("HEAD", redir.Url, nil)
 		if err != nil {
-			log.Fatal(err)
+			return redirs, err
 		}
 
 		resp, err := client.Do(req)
 		if err != nil {
-			log.Fatal(err)
+			return redirs, err
 		}
 
 		// Set response status code
